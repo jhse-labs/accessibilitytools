@@ -1,0 +1,178 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div id="accessibility-toolbar"
+     class="accessibility-toolbar accessibility-toolbar-{position}"
+     data-position="{position}"
+     data-readable-font="{readableFont}"
+     data-show-by-default="{showByDefault}"
+     data-dark-mode-exclude-selectors="{darkModeExcludeSelectors}"
+     data-trigger-link-href="{triggerLinkHref}"
+     data-greyscale-exclude-selectors="{greyscaleExcludeSelectors}"
+     style="--accessibility-offset-vertical: {offsetVertical}px; --accessibility-offset-horizontal: {offsetHorizontal}px; --accessibility-modal-offset-vertical: {modalOffsetVertical}px; --accessibility-modal-offset-horizontal: {modalOffsetHorizontal}px; --accessibility-button-color: {buttonColor}; --accessibility-modal-line-color: {modalLineColor}; --accessibility-action-color: {actionColor};"
+     role="complementary"
+     aria-label="{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:toolbar.title')}">
+
+    <!-- Toggle Button -->
+    <f:if condition="{showToolbarToggleButton}">
+        <button type="button"
+                class="accessibility-toolbar-toggle"
+                id="accessibility-toolbar-toggle"
+                aria-expanded="{f:if(condition: showByDefault, then: 'true', else: 'false')}"
+                aria-controls="accessibility-toolbar-content"
+                title="{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:toolbar.toggle')}">
+                <span class="accessibility-icon">
+                    <f:image src="{iconSvgPath}" width="50" height="50" alt=""/>
+                </span>
+            <span class="sr-only">{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:toolbar.toggle')}</span>
+        </button>
+    </f:if>
+
+    <!-- Toolbar Content -->
+    <div class="accessibility-toolbar-content card shadow-lg"
+         id="accessibility-toolbar-content"
+         style="{f:if(condition: showByDefault, then: 'z-index: 5000;', else: 'display: none; z-index: 5000;')}">
+
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">
+                <f:translate key="LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:toolbar.title"/>
+            </h5>
+            <button type="button"
+                    class="btn-close accessibility-toolbar-close"
+                    aria-label="{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:toolbar.close')}"
+                    title="{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:toolbar.close')}">
+            </button>
+        </div>
+
+        <div class="card-body">
+            <!-- Text Size Controls -->
+            <f:if condition="{enableTextSize}">
+                <div class="accessibility-control mb-3">
+                    <label class="form-label d-block">
+                        <f:translate key="LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:textSize.label"/>
+                    </label>
+                    <div class="btn-group" role="group" aria-label="{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:textSize.label')}">
+                        <button type="button"
+                                class="btn btn-outline-secondary accessibility-text-size"
+                                data-size="small"
+                                title="{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:textSize.decrease')}">
+                            <span aria-hidden="true">A-</span>
+                            <span class="sr-only">{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:textSize.decrease')}</span>
+                        </button>
+                        <button type="button"
+                                class="btn btn-outline-secondary accessibility-text-size active"
+                                data-size="normal"
+                                title="{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:textSize.normal')}">
+                            <span aria-hidden="true">A</span>
+                            <span class="sr-only">{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:textSize.normal')}</span>
+                        </button>
+                        <button type="button"
+                                class="btn btn-outline-secondary accessibility-text-size"
+                                data-size="large"
+                                title="{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:textSize.increase')}">
+                            <span aria-hidden="true">A+</span>
+                            <span class="sr-only">{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:textSize.increase')}</span>
+                        </button>
+                        <button type="button"
+                                class="btn btn-outline-secondary accessibility-text-size"
+                                data-size="larger"
+                                title="{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:textSize.larger')}">
+                            <span aria-hidden="true">A++</span>
+                            <span class="sr-only">{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:textSize.larger')}</span>
+                        </button>
+                    </div>
+                </div>
+            </f:if>
+
+            <!-- High Contrast Toggle -->
+            <f:if condition="{enableHighContrast}">
+                <div class="accessibility-control mb-3">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input accessibility-toggle"
+                               type="checkbox"
+                               role="switch"
+                               id="accessibility-high-contrast"
+                               data-feature="high-contrast">
+                        <label class="form-check-label" for="accessibility-high-contrast">
+                            <f:translate key="LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:contrast.label"/>
+                        </label>
+                    </div>
+                </div>
+            </f:if>
+
+            <!-- Dark Mode Toggle -->
+            <f:if condition="{enableDarkMode}">
+                <div class="accessibility-control mb-3">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input accessibility-toggle"
+                               type="checkbox"
+                               role="switch"
+                               id="accessibility-dark-mode"
+                               data-feature="dark-mode">
+                        <label class="form-check-label" for="accessibility-dark-mode">
+                            <f:translate key="LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:darkMode.label"/>
+                        </label>
+                    </div>
+                </div>
+            </f:if>
+
+            <!-- Readable Font Toggle -->
+            <f:if condition="{enableReadableFont}">
+                <div class="accessibility-control mb-3">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input accessibility-toggle"
+                               type="checkbox"
+                               role="switch"
+                               id="accessibility-readable-font"
+                               data-feature="readable-font">
+                        <label class="form-check-label" for="accessibility-readable-font">
+                            <f:translate key="LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:readableFont.label"/>
+                        </label>
+                    </div>
+                </div>
+            </f:if>
+
+            <!-- Greyscale Toggle -->
+            <f:if condition="{enableGreyscale}">
+                <div class="accessibility-control mb-3">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input accessibility-toggle"
+                               type="checkbox"
+                               role="switch"
+                               id="accessibility-greyscale"
+                               data-feature="greyscale">
+                        <label class="form-check-label" for="accessibility-greyscale">
+                            <f:translate key="LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:greyscale.label"/>
+                        </label>
+                    </div>
+                </div>
+            </f:if>
+
+            <!-- Highlight Links Toggle -->
+            <f:if condition="{enableHighlightLinks}">
+                <div class="accessibility-control mb-3">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input accessibility-toggle"
+                               type="checkbox"
+                               role="switch"
+                               id="accessibility-highlight-links"
+                               data-feature="highlight-links">
+                        <label class="form-check-label" for="accessibility-highlight-links">
+                            <f:translate key="LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:highlightLinks.label"/>
+                        </label>
+                    </div>
+                </div>
+            </f:if>
+
+            <!-- Reset Button -->
+            <div class="accessibility-control mt-4">
+                <button type="button"
+                        class="btn btn-secondary w-100 accessibility-reset"
+                        title="{f:translate(key: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:reset.button')}">
+                    <f:translate key="LLL:EXT:accessibilitytools/Resources/Private/Language/locallang.xlf:reset.label"/>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

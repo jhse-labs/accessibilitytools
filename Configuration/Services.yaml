@@ -1,0 +1,20 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  JhseLabs\AccessibilityTools\:
+    resource: '../Classes/*'
+
+  JhseLabs\AccessibilityTools\EventListener\AddAccessibilityToolbar:
+    tags:
+      - name: event.listener
+        identifier: 'accessibilitytools-add-toolbar'
+        event: TYPO3\CMS\Frontend\Event\AfterCacheableContentIsGeneratedEvent
+
+  JhseLabs\AccessibilityTools\EventListener\BootstrapInjectionListener:
+    tags:
+      - name: event.listener
+        identifier: 'accessibilitytools-bootstrap-injection'
+        event: TYPO3\CMS\Frontend\Event\AfterPageAndLanguageIsResolvedEvent

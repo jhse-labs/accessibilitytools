@@ -1,0 +1,19 @@
+{
+    "name": "jhse-labs/accessibilitytools",
+  "type": "typo3-cms-extension",
+  "description": "Accessibility tools for TYPO3 frontend",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "typo3/cms-core": "^13.4"
+  },
+  "extra": {
+    "typo3/cms": {
+        "extension-key": "accessibilitytools"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+        "JhseLabs\\AccessibilityTools\\": "Classes/"
+    }
+  }
+}

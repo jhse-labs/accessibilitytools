@@ -1,0 +1,171 @@
+categories:
+  accessibilitytools:
+    label: 'Accessibility Tools'
+  accessibilitytools.settings:
+    label: 'Settings' # (2)
+    parent: accessibilitytools
+
+settings:
+  accessibilitytools.position:
+    label: 'Toolbar Position'
+    description: 'Choose where the accessibility toolbar appears on the page'
+    type: string
+    default: 'bottom-right'
+    enum:
+      bottom-right: 'Bottom Right'
+      bottom-left: 'Bottom Left'
+      top-right: 'Top Right'
+      top-left: 'Top Left'
+    category: accessibilitytools.settings
+
+  accessibilitytools.offsetVertical:
+    label: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.offsetVertical.label'
+    description: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.offsetVertical.description'
+    type: int
+    default: 20
+    category: accessibilitytools.settings
+
+  accessibilitytools.offsetHorizontal:
+    label: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.offsetHorizontal.label'
+    description: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.offsetHorizontal.description'
+    type: int
+    default: 20
+    category: accessibilitytools.settings
+
+  accessibilitytools.modalOffsetVertical:
+    label: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.modalOffsetVertical.label'
+    description: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.modalOffsetVertical.description'
+    type: int
+    default: 70
+    category: accessibilitytools.settings
+
+  accessibilitytools.modalOffsetHorizontal:
+    label: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.modalOffsetHorizontal.label'
+    description: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.modalOffsetHorizontal.description'
+    type: int
+    default: 0
+    category: accessibilitytools.settings
+
+  accessibilitytools.enableTextSize:
+    label: 'Enable Text Size Controls'
+    description: 'Show text size adjustment buttons (A-, A, A+)'
+    type: bool
+    default: true
+    category: accessibilitytools.settings
+      
+  accessibilitytools.enableHighContrast:
+    label: 'Enable High Contrast Mode'
+    description: 'Show high contrast mode toggle'
+    type: bool
+    default: true
+    category: accessibilitytools.settings
+      
+  accessibilitytools.enableDarkMode:
+    label: 'Enable Dark Mode'
+    description: 'Show dark mode toggle'
+    type: bool
+    default: true
+    category: accessibilitytools.settings
+
+  accessibilitytools.darkModeExcludeSelectors:
+    label: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.darkModeExcludeSelectors.label'
+    description: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.darkModeExcludeSelectors.description'
+    type: string
+    default: ''
+    category: accessibilitytools.settings
+      
+  accessibilitytools.enableReadableFont:
+    label: 'Enable Readable Font'
+    description: 'Show readable font toggle'
+    type: bool
+    default: true
+    category: accessibilitytools.settings
+      
+  accessibilitytools.enableGreyscale:
+    label: 'Enable Greyscale Mode'
+    description: 'Show greyscale mode toggle'
+    type: bool
+    default: true
+    category: accessibilitytools.settings
+
+  accessibilitytools.greyscaleExcludeSelectors:
+    label: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.greyscaleExcludeSelectors.label'
+    description: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.greyscaleExcludeSelectors.description'
+    type: string
+    default: 'video, .modal, .modal-backdrop'
+    category: accessibilitytools.settings
+      
+  accessibilitytools.enableHighlightLinks:
+    label: 'Enable Highlight Links'
+    description: 'Show highlight links toggle'
+    type: bool
+    default: true
+    category: accessibilitytools.settings
+      
+  accessibilitytools.readableFont:
+    label: 'Readable Font Type'
+    description: 'Font to use when readable font mode is enabled'
+    type: string
+    default: 'sans-serif'
+    enum:
+      sans-serif: 'Sans-Serif (Default)'
+      Verdana: 'Verdana'
+      'Comic Sans MS': 'Comic Sans MS'
+      OpenDyslexic: 'OpenDyslexic'
+    category: accessibilitytools.settings
+      
+  accessibilitytools.showByDefault:
+    label: 'Show activated Toolbar by Default'
+    description: 'Whether the toolbar should be expanded or not when the page loads'
+    type: bool
+    default: false
+    category: accessibilitytools.settings
+
+  accessibilitytools.showToolbarToggleButton:
+    label: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.showToolbarToggleButton.label'
+    description: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.showToolbarToggleButton.description'
+    type: bool
+    default: true
+    category: accessibilitytools.settings
+
+  accessibilitytools.triggerLinkHref:
+    label: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.triggerLinkHref.label'
+    description: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.triggerLinkHref.description'
+    type: string
+    default: ''
+    category: accessibilitytools.settings
+
+  accessibilitytools.buttonColor:
+    label: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.buttonColor.label'
+    description: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.buttonColor.description'
+    type: string
+    default: '#0d6efd'
+    category: accessibilitytools.settings
+
+  accessibilitytools.modalLineColor:
+    label: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.modalLineColor.label'
+    description: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.modalLineColor.description'
+    type: string
+    default: '#dee2e6'
+    category: accessibilitytools.settings
+
+  accessibilitytools.actionColor:
+    label: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.actionColor.label'
+    description: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.actionColor.description'
+    type: string
+    default: '#0d6efd'
+    category: accessibilitytools.settings
+
+  accessibilitytools.injectBootstrap:
+    label: 'Inject Bootstrap CSS and JS'
+    description: 'Whether to include Bootstrap CSS / JS. If you are already including it elsewhere, you should disable this option.'
+    type: bool
+    default: true
+    category: accessibilitytools.settings
+
+  accessibilitytools.iconSvgPath:
+    label: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.iconSvgPath.label'
+    description: 'LLL:EXT:accessibilitytools/Resources/Private/Language/locallang_db.xlf:settings.iconSvgPath.description'
+    type: string
+    default: 'EXT:accessibilitytools/Resources/Public/Icons/accessibility-icon.svg'
+    category: accessibilitytools.settings

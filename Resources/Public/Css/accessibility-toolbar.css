@@ -1,0 +1,108 @@
+/* Accessibility Toolbar - Bootstrap Compatible UI Styles */
+
+/* Toolbar Container */
+.accessibility-toolbar {
+    position: fixed;
+    z-index: 9999;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    --accessibility-button-color: #0d6efd;
+    --accessibility-modal-line-color: #dee2e6;
+    --accessibility-action-color: #0d6efd;
+}
+
+/* Position variants */
+.accessibility-toolbar-bottom-right {
+    bottom: var(--accessibility-offset-vertical, 20px);
+    right: var(--accessibility-offset-horizontal, 20px);
+}
+
+.accessibility-toolbar-bottom-left {
+    bottom: var(--accessibility-offset-vertical, 20px);
+    left: var(--accessibility-offset-horizontal, 20px);
+}
+
+.accessibility-toolbar-top-right {
+    top: var(--accessibility-offset-vertical, 20px);
+    right: var(--accessibility-offset-horizontal, 20px);
+}
+
+.accessibility-toolbar-top-left {
+    top: var(--accessibility-offset-vertical, 20px);
+    left: var(--accessibility-offset-horizontal, 20px);
+}
+
+/* Toggle Button */
+.accessibility-toolbar-toggle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border: none;
+    background-color: var(--accessibility-button-color);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.accessibility-toolbar-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.accessibility-toolbar-toggle:focus {
+    outline: 3px solid var(--accessibility-button-color);
+    outline-offset: 2px;
+}
+
+.accessibility-toolbar-toggle .accessibility-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Screen reader only content */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Ensure toolbar remains visible and functional in all modes */
+body.accessibility-high-contrast #accessibility-toolbar,
+body.accessibility-dark-mode #accessibility-toolbar {
+    background-color: transparent !important;
+}
+
+body.accessibility-high-contrast .accessibility-toolbar-toggle {
+    background-color: var(--accessibility-button-color) !important;
+    color: #ffffff !important;
+    border: 2px solid #000000 !important;
+}
+
+body.accessibility-dark-mode .accessibility-toolbar-toggle {
+    background-color: var(--accessibility-button-color) !important;
+    color: #ffffff !important;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .accessibility-toolbar {
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .accessibility-toolbar-toggle {
+        width: 48px;
+        height: 48px;
+    }
+}

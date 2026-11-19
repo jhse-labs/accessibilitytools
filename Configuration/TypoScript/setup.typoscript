@@ -1,0 +1,18 @@
+####################################
+#### ACCESSIBILITY TOOLS SETUP ####
+####################################
+
+# Include CSS and JavaScript
+page {
+    includeCSS {
+        accessibilityToolbar = EXT:accessibilitytools/Resources/Public/Css/accessibility-toolbar.css
+        accessibilityToolbarPlugin = EXT:accessibilitytools/Resources/Public/Css/accessibility-toolbar-plugin.css
+    }
+    
+    includeJSFooter {
+        accessibilityTools = EXT:accessibilitytools/Resources/Public/JavaScript/accessibility-toolbar.js
+    }
+}
+
+# Note: The toolbar is automatically injected via PHP Event Listener
+# See: JhseLabs\AccessibilityTools\EventListener\AddAccessibilityToolbar

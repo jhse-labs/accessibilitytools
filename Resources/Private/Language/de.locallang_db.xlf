@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2026-05-08T19:07:00Z" product-name="accessibilitytools">
+        <header/>
+        <body>
+            <trans-unit id="plugin.toolbar.title">
+                <source>Accessibility Toolbar</source>
+                <target>Barrierefreiheitsleiste</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.general">
+                <source>General Settings</source>
+                <target>Allgemeine Einstellungen</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.position">
+                <source>Toolbar Position</source>
+                <target>Position der Leiste</target>
+            </trans-unit>
+            <trans-unit id="flexform.position.bottomRight">
+                <source>Bottom Right</source>
+                <target>Unten rechts</target>
+            </trans-unit>
+            <trans-unit id="flexform.position.bottomLeft">
+                <source>Bottom Left</source>
+                <target>Unten links</target>
+            </trans-unit>
+            <trans-unit id="flexform.position.topRight">
+                <source>Top Right</source>
+                <target>Oben rechts</target>
+            </trans-unit>
+            <trans-unit id="flexform.position.topLeft">
+                <source>Top Left</source>
+                <target>Oben links</target>
+            </trans-unit>
+
+            <trans-unit id="settings.offsetVertical.label">
+                <source>Toolbar Vertical Offset (px)</source>
+                <target>Vertikaler Versatz der Toolbar (px)</target>
+            </trans-unit>
+            <trans-unit id="settings.offsetVertical.description">
+                <source>Distance in pixels from top/bottom depending on toolbar position</source>
+                <target>Abstand in Pixeln von oben/unten, abhängig von der Position der Toolbar</target>
+            </trans-unit>
+
+            <trans-unit id="settings.offsetHorizontal.label">
+                <source>Toolbar Horizontal Offset (px)</source>
+                <target>Horizontaler Versatz der Toolbar (px)</target>
+            </trans-unit>
+            <trans-unit id="settings.offsetHorizontal.description">
+                <source>Distance in pixels from left/right depending on toolbar position</source>
+                <target>Abstand in Pixeln von links/rechts, abhängig von der Position der Toolbar</target>
+            </trans-unit>
+
+            <trans-unit id="settings.modalOffsetVertical.label">
+                <source>Modal Vertical Offset (px)</source>
+                <target>Vertikaler Versatz des Dialogs (px)</target>
+            </trans-unit>
+            <trans-unit id="settings.modalOffsetVertical.description">
+                <source>Distance in pixels from the toolbar anchor on the vertical axis (top/bottom depending on toolbar position)</source>
+                <target>Abstand in Pixeln vom Toolbar-Anker auf der vertikalen Achse (oben/unten, abhängig von der Position der Toolbar)</target>
+            </trans-unit>
+
+            <trans-unit id="settings.modalOffsetHorizontal.label">
+                <source>Modal Horizontal Offset (px)</source>
+                <target>Horizontaler Versatz des Dialogs (px)</target>
+            </trans-unit>
+            <trans-unit id="settings.modalOffsetHorizontal.description">
+                <source>Distance in pixels from the toolbar anchor edge on the horizontal axis (left/right depending on toolbar position)</source>
+                <target>Abstand in Pixeln von der Toolbar-Ankerkante auf der horizontalen Achse (links/rechts, abhängig von der Position der Toolbar)</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.enableTextSize">
+                <source>Enable Text Size Controls</source>
+                <target>Textgrößensteuerung aktivieren</target>
+            </trans-unit>
+            <trans-unit id="flexform.enableHighContrast">
+                <source>Enable High Contrast Mode</source>
+                <target>Hochkontrastmodus aktivieren</target>
+            </trans-unit>
+            <trans-unit id="flexform.enableDarkMode">
+                <source>Enable Dark Mode</source>
+                <target>Dunkelmodus aktivieren</target>
+            </trans-unit>
+            <trans-unit id="settings.darkModeExcludeSelectors.label">
+                <source>Dark Mode Exclude Selectors</source>
+                <target>Ausschluss-Selektoren für den Dunkelmodus</target>
+            </trans-unit>
+            <trans-unit id="settings.darkModeExcludeSelectors.description">
+                <source>Comma-separated CSS selectors that should be excluded from dark mode rendering</source>
+                <target>Kommagetrennte CSS-Selektoren, die von der Dunkelmodus-Darstellung ausgeschlossen werden sollen</target>
+            </trans-unit>
+            <trans-unit id="flexform.enableReadableFont">
+                <source>Enable Readable Font</source>
+                <target>Lesefreundliche Schrift aktivieren</target>
+            </trans-unit>
+            <trans-unit id="settings.greyscaleExcludeSelectors.label">
+                <source>Greyscale Exclude Selectors</source>
+                <target>Ausschluss-Selektoren für den Graustufenmodus</target>
+            </trans-unit>
+            <trans-unit id="settings.greyscaleExcludeSelectors.description">
+                <source>Comma-separated CSS selectors that should be excluded from greyscale rendering (e.g. video, .modal, .modal-backdrop)</source>
+                <target>Kommagetrennte CSS-Selektoren, die von der Graustufendarstellung ausgeschlossen werden sollen (z. B. video, .modal, .modal-backdrop)</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.readableFont">
+                <source>Readable Font Type</source>
+                <target>Typ der lesefreundlichen Schrift</target>
+            </trans-unit>
+            <trans-unit id="flexform.font.sansSerif">
+                <source>Sans-Serif (Default)</source>
+                <target>Sans-Serif (Standard)</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.font.verdana">
+                <source>Verdana</source>
+                <target>Verdana</target>
+            </trans-unit>
+            <trans-unit id="flexform.font.comicSans">
+                <source>Comic Sans MS</source>
+                <target>Comic Sans MS</target>
+            </trans-unit>
+            <trans-unit id="flexform.font.openDyslexic">
+                <source>OpenDyslexic</source>
+                <target>OpenDyslexic</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.showByDefault">
+                <source>Show Toolbar by Default</source>
+                <target>Leiste standardmäßig anzeigen</target>
+            </trans-unit>
+
+            <trans-unit id="settings.iconSvgPath.label">
+                <source>Accessibility Icon SVG Path</source>
+                <target>SVG-Pfad für das Barrierefreiheits-Icon</target>
+            </trans-unit>
+            <trans-unit id="settings.iconSvgPath.description">
+                <source>EXT: path to a custom SVG icon for the toolbar toggle button</source>
+                <target>EXT: Pfad zu einem benutzerdefinierten SVG-Icon für das Barrierefreiheits-Icon der Leiste</target>
+            </trans-unit>
+
+            <trans-unit id="settings.showToolbarToggleButton.label">
+                <source>Show Accessibility Toggle Button in Frontend</source>
+                <target>Barrierefreiheits-Umschaltbutton im Frontend anzeigen</target>
+            </trans-unit>
+            <trans-unit id="settings.showToolbarToggleButton.description">
+                <source>Whether the default floating accessibility toggle button/icon should be rendered</source>
+                <target>Legt fest, ob der standardmäßige schwebende Barrierefreiheits-Umschaltbutton bzw. das Icon gerendert werden soll</target>
+            </trans-unit>
+
+            <trans-unit id="settings.triggerLinkHref.label">
+                <source>Accessibility Trigger Link HREF(s)</source>
+                <target>HREF(s) für den Barrierefreiheits-Trigger-Link</target>
+            </trans-unit>
+            <trans-unit id="settings.triggerLinkHref.description">
+                <source>Comma-separated list of anchor href values that should open the accessibility toolbar (e.g. #accessibility, /accessibility)</source>
+                <target>Kommagetrennte Liste von href-Werten für Links, die die Barrierefreiheitsleiste öffnen sollen (z. B. #accessibility, /accessibility)</target>
+            </trans-unit>
+
+            <trans-unit id="settings.buttonColor.label">
+                <source>Accessibility Button Color</source>
+                <target>Farbe des Barrierefreiheits-Buttons</target>
+            </trans-unit>
+            <trans-unit id="settings.buttonColor.description">
+                <source>HEX color for the floating accessibility button (e.g. #0d6efd)</source>
+                <target>HEX-Farbe für den schwebenden Barrierefreiheits-Button (z. B. #0d6efd)</target>
+            </trans-unit>
+
+            <trans-unit id="settings.modalLineColor.label">
+                <source>Accessibility Modal Line Color</source>
+                <target>Linienfarbe des Barrierefreiheits-Dialogs</target>
+            </trans-unit>
+            <trans-unit id="settings.modalLineColor.description">
+                <source>HEX color for modal borders and separator lines (e.g. #dee2e6)</source>
+                <target>HEX-Farbe für Dialograhmen und Trennlinien (z. B. #dee2e6)</target>
+            </trans-unit>
+
+            <trans-unit id="settings.actionColor.label">
+                <source>Accessibility Action Color</source>
+                <target>Farbe für Barrierefreiheits-Aktionen</target>
+            </trans-unit>
+            <trans-unit id="settings.actionColor.description">
+                <source>HEX color for the reset button and active text-size option (e.g. #0d6efd)</source>
+                <target>HEX-Farbe für den Zurücksetzen-Button und die aktive Textgrößenoption (z. B. #0d6efd)</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

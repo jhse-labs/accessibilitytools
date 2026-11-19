@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2026-01-26T15:00:00Z" product-name="accessibilitytools">
+        <header/>
+        <body>
+            <trans-unit id="toolbar.title">
+                <source>Accessibility</source>
+            </trans-unit>
+            <trans-unit id="toolbar.toggle">
+                <source>Toggle Accessibility Toolbar</source>
+            </trans-unit>
+            <trans-unit id="toolbar.close">
+                <source>Close Toolbar</source>
+            </trans-unit>
+            
+            <trans-unit id="textSize.label">
+                <source>Text Size</source>
+            </trans-unit>
+            <trans-unit id="textSize.decrease">
+                <source>Decrease Text Size</source>
+            </trans-unit>
+            <trans-unit id="textSize.normal">
+                <source>Normal Text Size</source>
+            </trans-unit>
+            <trans-unit id="textSize.increase">
+                <source>Increase Text Size</source>
+            </trans-unit>
+            <trans-unit id="textSize.larger">
+                <source>Extra Large Text Size</source>
+            </trans-unit>
+            <trans-unit id="textSize.largest">
+                <source>Largest Text Size</source>
+            </trans-unit>
+            
+            <trans-unit id="contrast.label">
+                <source>High Contrast</source>
+            </trans-unit>
+            <trans-unit id="contrast.toggle">
+                <source>Toggle High Contrast Mode</source>
+            </trans-unit>
+            
+            <trans-unit id="darkMode.label">
+                <source>Dark Mode</source>
+            </trans-unit>
+            <trans-unit id="darkMode.toggle">
+                <source>Toggle Dark Mode</source>
+            </trans-unit>
+            
+            <trans-unit id="readableFont.label">
+                <source>Readable Font</source>
+            </trans-unit>
+            <trans-unit id="readableFont.toggle">
+                <source>Toggle Readable Font</source>
+            </trans-unit>
+            
+            <trans-unit id="greyscale.label">
+                <source>Greyscale Mode</source>
+            </trans-unit>
+            <trans-unit id="greyscale.toggle">
+                <source>Toggle Greyscale Mode</source>
+            </trans-unit>
+            
+            <trans-unit id="highlightLinks.label">
+                <source>Highlight Links</source>
+            </trans-unit>
+            <trans-unit id="highlightLinks.toggle">
+                <source>Toggle Link Highlighting</source>
+            </trans-unit>
+            
+            <trans-unit id="reset.label">
+                <source>Reset All</source>
+            </trans-unit>
+            <trans-unit id="reset.button">
+                <source>Reset All Settings</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2026-01-26T15:00:00Z" product-name="accessibilitytools">
+        <header/>
+        <body>
+            <trans-unit id="plugin.toolbar.title">
+                <source>Accessibility Toolbar</source>
+            </trans-unit>
+            
+            <trans-unit id="flexform.general">
+                <source>General Settings</source>
+            </trans-unit>
+            
+            <trans-unit id="flexform.position">
+                <source>Toolbar Position</source>
+            </trans-unit>
+            <trans-unit id="flexform.position.bottomRight">
+                <source>Bottom Right</source>
+            </trans-unit>
+            <trans-unit id="flexform.position.bottomLeft">
+                <source>Bottom Left</source>
+            </trans-unit>
+            <trans-unit id="flexform.position.topRight">
+                <source>Top Right</source>
+            </trans-unit>
+            <trans-unit id="flexform.position.topLeft">
+                <source>Top Left</source>
+            </trans-unit>
+
+            <trans-unit id="settings.offsetVertical.label">
+                <source>Toolbar Vertical Offset (px)</source>
+            </trans-unit>
+            <trans-unit id="settings.offsetVertical.description">
+                <source>Distance in pixels from top/bottom depending on toolbar position</source>
+            </trans-unit>
+
+            <trans-unit id="settings.offsetHorizontal.label">
+                <source>Toolbar Horizontal Offset (px)</source>
+            </trans-unit>
+            <trans-unit id="settings.offsetHorizontal.description">
+                <source>Distance in pixels from left/right depending on toolbar position</source>
+            </trans-unit>
+
+            <trans-unit id="settings.modalOffsetVertical.label">
+                <source>Modal Vertical Offset (px)</source>
+            </trans-unit>
+            <trans-unit id="settings.modalOffsetVertical.description">
+                <source>Distance in pixels from the toolbar anchor on the vertical axis (top/bottom depending on toolbar position)</source>
+            </trans-unit>
+
+            <trans-unit id="settings.modalOffsetHorizontal.label">
+                <source>Modal Horizontal Offset (px)</source>
+            </trans-unit>
+            <trans-unit id="settings.modalOffsetHorizontal.description">
+                <source>Distance in pixels from the toolbar anchor edge on the horizontal axis (left/right depending on toolbar position)</source>
+            </trans-unit>
+            
+            <trans-unit id="flexform.enableTextSize">
+                <source>Enable Text Size Controls</source>
+            </trans-unit>
+            <trans-unit id="flexform.enableHighContrast">
+                <source>Enable High Contrast Mode</source>
+            </trans-unit>
+            <trans-unit id="flexform.enableDarkMode">
+                <source>Enable Dark Mode</source>
+            </trans-unit>
+            <trans-unit id="settings.darkModeExcludeSelectors.label">
+                <source>Dark Mode Exclude Selectors</source>
+            </trans-unit>
+            <trans-unit id="settings.darkModeExcludeSelectors.description">
+                <source>Comma-separated CSS selectors that should be excluded from dark mode rendering</source>
+            </trans-unit>
+            <trans-unit id="flexform.enableReadableFont">
+                <source>Enable Readable Font</source>
+            </trans-unit>
+            <trans-unit id="settings.greyscaleExcludeSelectors.label">
+                <source>Greyscale Exclude Selectors</source>
+            </trans-unit>
+            <trans-unit id="settings.greyscaleExcludeSelectors.description">
+                <source>Comma-separated CSS selectors that should be excluded from greyscale rendering (e.g. video, .modal, .modal-backdrop)</source>
+            </trans-unit>
+            
+            <trans-unit id="flexform.readableFont">
+                <source>Readable Font Type</source>
+            </trans-unit>
+            <trans-unit id="flexform.font.sansSerif">
+                <source>Sans-Serif (Default)</source>
+            </trans-unit>
+
+            <trans-unit id="flexform.font.verdana">
+                <source>Verdana</source>
+            </trans-unit>
+            <trans-unit id="flexform.font.comicSans">
+                <source>Comic Sans MS</source>
+            </trans-unit>
+            <trans-unit id="flexform.font.openDyslexic">
+                <source>OpenDyslexic</source>
+            </trans-unit>
+            
+            <trans-unit id="flexform.showByDefault">
+                <source>Show Toolbar by Default</source>
+            </trans-unit>
+
+            <trans-unit id="settings.iconSvgPath.label">
+                <source>Accessibility Icon SVG Path</source>
+            </trans-unit>
+            <trans-unit id="settings.iconSvgPath.description">
+                <source>EXT: path to a custom SVG icon for the toolbar toggle button</source>
+            </trans-unit>
+
+            <trans-unit id="settings.showToolbarToggleButton.label">
+                <source>Show Accessibility Toggle Button in Frontend</source>
+            </trans-unit>
+            <trans-unit id="settings.showToolbarToggleButton.description">
+                <source>Whether the default floating accessibility toggle button/icon should be rendered</source>
+            </trans-unit>
+
+            <trans-unit id="settings.triggerLinkHref.label">
+                <source>Accessibility Trigger Link HREF(s)</source>
+            </trans-unit>
+            <trans-unit id="settings.triggerLinkHref.description">
+                <source>Comma-separated list of anchor href values that should open the accessibility toolbar (e.g. #accessibility, /accessibility)</source>
+            </trans-unit>
+
+            <trans-unit id="settings.buttonColor.label">
+                <source>Accessibility Button Color</source>
+            </trans-unit>
+            <trans-unit id="settings.buttonColor.description">
+                <source>HEX color for the floating accessibility button (e.g. #0d6efd)</source>
+            </trans-unit>
+
+            <trans-unit id="settings.modalLineColor.label">
+                <source>Accessibility Modal Line Color</source>
+            </trans-unit>
+            <trans-unit id="settings.modalLineColor.description">
+                <source>HEX color for modal borders and separator lines (e.g. #dee2e6)</source>
+            </trans-unit>
+
+            <trans-unit id="settings.actionColor.label">
+                <source>Accessibility Action Color</source>
+            </trans-unit>
+            <trans-unit id="settings.actionColor.description">
+                <source>HEX color for the reset button and active text-size option (e.g. #0d6efd)</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

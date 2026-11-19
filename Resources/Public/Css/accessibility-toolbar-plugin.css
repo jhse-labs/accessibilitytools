@@ -1,0 +1,434 @@
+/* Accessibility Toolbar Plugin - Content & Functionality Styles */
+
+/* Toolbar Content Panel */
+.accessibility-toolbar-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    max-width: calc(100vw - 40px);
+    max-height: min(85vh, 600px);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accessibility-toolbar-content.card {
+    border-color: var(--accessibility-modal-line-color);
+}
+
+.accessibility-toolbar-content .card-header {
+    border-bottom-color: var(--accessibility-modal-line-color);
+    flex-shrink: 0;
+}
+
+.accessibility-toolbar-content .accessibility-control {
+    border-bottom: 1px solid var(--accessibility-modal-line-color);
+    padding-bottom: 0.75rem;
+}
+
+.accessibility-toolbar-content .accessibility-control:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.accessibility-toolbar-content .accessibility-reset {
+    background-color: var(--accessibility-action-color);
+    border-color: var(--accessibility-action-color);
+    color: #ffffff;
+}
+
+.accessibility-toolbar-content .accessibility-reset:hover,
+.accessibility-toolbar-content .accessibility-reset:focus,
+.accessibility-toolbar-content .accessibility-reset:active {
+    background-color: var(--accessibility-action-color);
+    border-color: var(--accessibility-action-color);
+    color: #ffffff;
+    filter: brightness(0.95);
+}
+
+.accessibility-toolbar-content .accessibility-text-size.active,
+.accessibility-toolbar-content .accessibility-text-size:active,
+.accessibility-toolbar-content .accessibility-text-size:focus-visible {
+    background-color: var(--accessibility-action-color);
+    border-color: var(--accessibility-action-color);
+    color: #ffffff;
+}
+
+.accessibility-toolbar-content .card-body {
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.accessibility-toolbar-content .btn-group {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.accessibility-toolbar-content .btn-group > .btn {
+    flex: 1 1 auto;
+    min-width: 3rem;
+}
+
+.accessibility-toolbar-bottom-right .accessibility-toolbar-content,
+.accessibility-toolbar-top-right .accessibility-toolbar-content {
+    right: var(--accessibility-modal-offset-horizontal, 0px);
+}
+
+.accessibility-toolbar-bottom-left .accessibility-toolbar-content,
+.accessibility-toolbar-top-left .accessibility-toolbar-content {
+    left: var(--accessibility-modal-offset-horizontal, 0px);
+}
+
+.accessibility-toolbar-bottom-right .accessibility-toolbar-content,
+.accessibility-toolbar-bottom-left .accessibility-toolbar-content {
+    bottom: var(--accessibility-modal-offset-vertical, 70px);
+}
+
+.accessibility-toolbar-top-right .accessibility-toolbar-content,
+.accessibility-toolbar-top-left .accessibility-toolbar-content {
+    top: var(--accessibility-modal-offset-vertical, 70px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.accessibility-toolbar-content.show {
+    animation: fadeIn 0.3s ease;
+}
+
+/* ============================================
+   ACCESSIBILITY FEATURES APPLIED TO BODY
+   ============================================ */
+
+/* Text Size Controls */
+html.accessibility-text-small {
+    font-size: 92.5% !important;
+}
+
+html.accessibility-text-large {
+    font-size: 107.5% !important;
+}
+
+html.accessibility-text-larger {
+    font-size: 115% !important;
+}
+
+/* Ensure navbar navigation typography scales with text size settings */
+html.accessibility-text-small .navbar-brand,
+html.accessibility-text-small .navbar-nav .nav-link,
+html.accessibility-text-small .navbar-nav .dropdown-item {
+    font-size: 0.925em !important;
+}
+
+html.accessibility-text-large .navbar-brand,
+html.accessibility-text-large .navbar-nav .nav-link,
+html.accessibility-text-large .navbar-nav .dropdown-item {
+    font-size: 1.075em !important;
+}
+
+html.accessibility-text-larger .navbar-brand,
+html.accessibility-text-larger .navbar-nav .nav-link,
+html.accessibility-text-larger .navbar-nav .dropdown-item {
+    font-size: 1.15em !important;
+}
+
+/* High Contrast Mode */
+body.accessibility-high-contrast {
+    background: #ffffff !important;
+    color: #000000 !important;
+}
+
+body.accessibility-high-contrast * {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-color: #000000 !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+
+body.accessibility-high-contrast a {
+    color: #0000ee !important;
+    text-decoration: underline !important;
+}
+
+body.accessibility-high-contrast a:visited {
+    color: #551a8b !important;
+}
+
+body.accessibility-high-contrast button,
+body.accessibility-high-contrast .btn {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #000000 !important;
+}
+
+body.accessibility-high-contrast input,
+body.accessibility-high-contrast select,
+body.accessibility-high-contrast textarea {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 2px solid #000000 !important;
+}
+
+body.accessibility-high-contrast img {
+    opacity: 1 !important;
+    filter: contrast(1.2) !important;
+}
+
+/* Dark Mode */
+body.accessibility-dark-mode {
+    background: #1a1a1a !important;
+}
+
+body.accessibility-dark-mode .accessibility-dark-mode-target,
+body.accessibility-dark-mode .accessibility-dark-mode-target * {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+    border-color: #404040 !important;
+}
+
+body.accessibility-dark-mode .accessibility-dark-mode-target.card,
+body.accessibility-dark-mode .accessibility-dark-mode-target .card,
+body.accessibility-dark-mode .accessibility-dark-mode-target .modal-content,
+body.accessibility-dark-mode .accessibility-dark-mode-target .dropdown-menu {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+body.accessibility-dark-mode .accessibility-dark-mode-target a {
+    color: #6ea8fe !important;
+}
+
+body.accessibility-dark-mode .accessibility-dark-mode-target a:hover {
+    color: #9ec5fe !important;
+}
+
+body.accessibility-dark-mode .accessibility-dark-mode-target button,
+body.accessibility-dark-mode .accessibility-dark-mode-target .btn {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border-color: #606060 !important;
+}
+
+body.accessibility-dark-mode .accessibility-dark-mode-target .btn-primary {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+
+body.accessibility-dark-mode .accessibility-dark-mode-target input,
+body.accessibility-dark-mode .accessibility-dark-mode-target select,
+body.accessibility-dark-mode .accessibility-dark-mode-target textarea {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-color: #404040 !important;
+}
+
+body.accessibility-dark-mode .accessibility-dark-mode-target img {
+    opacity: 0.9;
+    filter: brightness(0.9);
+}
+
+body.accessibility-dark-mode .accessibility-toolbar-content {
+    background-color: #2d2d2d !important;
+}
+
+/* Readable Font */
+body.accessibility-readable-font {
+    font-family: var(--accessibility-readable-font, Helvetica, sans-serif) !important;
+    letter-spacing: 0.05em !important;
+    line-height: 1.8 !important;
+}
+
+body.accessibility-readable-font * {
+    font-family: var(--accessibility-readable-font, Helvetica, sans-serif) !important;
+}
+
+/* Keep icon fonts untouched in readable-font mode */
+body.accessibility-readable-font .fa,
+body.accessibility-readable-font .fas,
+body.accessibility-readable-font .far,
+body.accessibility-readable-font .fal,
+body.accessibility-readable-font .fab,
+body.accessibility-readable-font .fa-solid,
+body.accessibility-readable-font .fa-regular,
+body.accessibility-readable-font .fa-brands,
+body.accessibility-readable-font [class^="fa-"],
+body.accessibility-readable-font [class*=" fa-"] {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", "Font Awesome 5 Free", "Font Awesome 5 Brands", "FontAwesome" !important;
+}
+
+body.accessibility-readable-font .fa::before,
+body.accessibility-readable-font .fas::before,
+body.accessibility-readable-font .far::before,
+body.accessibility-readable-font .fal::before,
+body.accessibility-readable-font .fab::before,
+body.accessibility-readable-font .fa-solid::before,
+body.accessibility-readable-font .fa-regular::before,
+body.accessibility-readable-font .fa-brands::before,
+body.accessibility-readable-font [class^="fa-"]::before,
+body.accessibility-readable-font [class*=" fa-"]::before,
+body.accessibility-readable-font .fa::after,
+body.accessibility-readable-font .fas::after,
+body.accessibility-readable-font .far::after,
+body.accessibility-readable-font .fal::after,
+body.accessibility-readable-font .fab::after,
+body.accessibility-readable-font .fa-solid::after,
+body.accessibility-readable-font .fa-regular::after,
+body.accessibility-readable-font .fa-brands::after,
+body.accessibility-readable-font [class^="fa-"]::after,
+body.accessibility-readable-font [class*=" fa-"]::after {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", "Font Awesome 5 Free", "Font Awesome 5 Brands", "FontAwesome" !important;
+}
+
+body.accessibility-readable-font .icofont,
+body.accessibility-readable-font [class^="icofont-"],
+body.accessibility-readable-font [class*=" icofont-"] {
+    font-family: "IcoFont" !important;
+}
+
+body.accessibility-readable-font .icofont::before,
+body.accessibility-readable-font [class^="icofont-"]::before,
+body.accessibility-readable-font [class*=" icofont-"]::before,
+body.accessibility-readable-font .icofont::after,
+body.accessibility-readable-font [class^="icofont-"]::after,
+body.accessibility-readable-font [class*=" icofont-"]::after {
+    font-family: "IcoFont" !important;
+}
+
+body.accessibility-readable-font h1,
+body.accessibility-readable-font h2,
+body.accessibility-readable-font h3,
+body.accessibility-readable-font h4,
+body.accessibility-readable-font h5,
+body.accessibility-readable-font h6 {
+    font-family: var(--accessibility-readable-font, Helvetica, sans-serif) !important;
+    font-weight: 600 !important;
+}
+
+/* Greyscale Mode */
+body.accessibility-greyscale .accessibility-greyscale-target {
+    filter: grayscale(100%) !important;
+}
+
+/* Highlight Links */
+body.accessibility-highlight-links a {
+    text-decoration: underline !important;
+    font-weight: bold !important;
+    text-decoration-thickness: 2px !important;
+    text-underline-offset: 2px !important;
+}
+
+body.accessibility-highlight-links a:hover {
+    text-decoration-thickness: 3px !important;
+}
+
+/* ============================================
+   TOOLBAR CONTENT IN DIFFERENT MODES
+   ============================================ */
+
+/* High Contrast Mode - Content Panel */
+body.accessibility-high-contrast .accessibility-toolbar-content {
+    background-color: #ffffff !important;
+}
+
+body.accessibility-high-contrast .accessibility-toolbar-content * {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* High contrast mode - keep switch states clearly visible */
+body.accessibility-high-contrast #accessibility-toolbar .form-check-input {
+    background-color: #ffffff !important;
+    border: 2px solid #000000 !important;
+}
+
+body.accessibility-high-contrast #accessibility-toolbar .form-check-input:checked {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+body.accessibility-high-contrast #accessibility-toolbar .form-check-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25) !important;
+}
+
+body.accessibility-high-contrast #accessibility-toolbar .form-check-input:checked[type="checkbox"] {
+    --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23ffffff'/%3e%3c/svg%3e") !important;
+}
+
+/* High contrast mode - keep text size button active state visible */
+body.accessibility-high-contrast #accessibility-toolbar .accessibility-text-size {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 2px solid #000000 !important;
+}
+
+body.accessibility-high-contrast #accessibility-toolbar .accessibility-text-size.active,
+body.accessibility-high-contrast #accessibility-toolbar .accessibility-text-size:active,
+body.accessibility-high-contrast #accessibility-toolbar .accessibility-text-size:focus-visible {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #000000 !important;
+}
+
+/* Dark Mode - Content Panel */
+body.accessibility-dark-mode .accessibility-toolbar-content {
+    background-color: #2d2d2d !important;
+}
+
+body.accessibility-dark-mode .accessibility-toolbar-content * {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - CONTENT
+   ============================================ */
+
+@media (max-width: 576px) {
+    .accessibility-toolbar-content {
+        position: fixed;
+        left: 10px !important;
+        right: 10px !important;
+        top: auto;
+        bottom: 70px;
+        width: auto;
+        max-width: none;
+        max-height: calc(100vh - 90px);
+        max-height: calc(100dvh - 90px);
+    }
+
+    .accessibility-toolbar-content .card-header,
+    .accessibility-toolbar-content .card-body {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .accessibility-toolbar-content .btn-group {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        width: 100%;
+    }
+
+    .accessibility-toolbar-content .btn-group > .btn {
+        width: 100%;
+    }
+}
+
+/* Focus visible for better keyboard navigation */
+.accessibility-toolbar button:focus-visible,
+.accessibility-toolbar input:focus-visible {
+    outline: 3px solid #0d6efd;
+    outline-offset: 2px;
+}

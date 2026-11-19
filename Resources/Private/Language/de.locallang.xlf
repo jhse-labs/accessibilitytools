@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2026-05-08T19:07:00Z" product-name="accessibilitytools">
+        <header/>
+        <body>
+            <trans-unit id="toolbar.title">
+                <source>Accessibility</source>
+                <target>Barrierefreiheit</target>
+            </trans-unit>
+            <trans-unit id="toolbar.toggle">
+                <source>Toggle Accessibility Toolbar</source>
+                <target>Barrierefreiheitsleiste ein-/ausblenden</target>
+            </trans-unit>
+            <trans-unit id="toolbar.close">
+                <source>Close Toolbar</source>
+                <target>Leiste schließen</target>
+            </trans-unit>
+
+            <trans-unit id="textSize.label">
+                <source>Text Size</source>
+                <target>Textgröße</target>
+            </trans-unit>
+            <trans-unit id="textSize.decrease">
+                <source>Decrease Text Size</source>
+                <target>Textgröße verkleinern</target>
+            </trans-unit>
+            <trans-unit id="textSize.normal">
+                <source>Normal Text Size</source>
+                <target>Normale Textgröße</target>
+            </trans-unit>
+            <trans-unit id="textSize.increase">
+                <source>Increase Text Size</source>
+                <target>Textgröße vergrößern</target>
+            </trans-unit>
+            <trans-unit id="textSize.larger">
+                <source>Extra Large Text Size</source>
+                <target>Sehr große Textgröße</target>
+            </trans-unit>
+            <trans-unit id="textSize.largest">
+                <source>Largest Text Size</source>
+                <target>Größte Textgröße</target>
+            </trans-unit>
+
+            <trans-unit id="contrast.label">
+                <source>High Contrast</source>
+                <target>Hoher Kontrast</target>
+            </trans-unit>
+            <trans-unit id="contrast.toggle">
+                <source>Toggle High Contrast Mode</source>
+                <target>Hochkontrastmodus ein-/ausschalten</target>
+            </trans-unit>
+
+            <trans-unit id="darkMode.label">
+                <source>Dark Mode</source>
+                <target>Dunkelmodus</target>
+            </trans-unit>
+            <trans-unit id="darkMode.toggle">
+                <source>Toggle Dark Mode</source>
+                <target>Dunkelmodus ein-/ausschalten</target>
+            </trans-unit>
+
+            <trans-unit id="readableFont.label">
+                <source>Readable Font</source>
+                <target>Lesefreundliche Schrift</target>
+            </trans-unit>
+            <trans-unit id="readableFont.toggle">
+                <source>Toggle Readable Font</source>
+                <target>Lesefreundliche Schrift ein-/ausschalten</target>
+            </trans-unit>
+
+            <trans-unit id="greyscale.label">
+                <source>Greyscale Mode</source>
+                <target>Graustufenmodus</target>
+            </trans-unit>
+            <trans-unit id="greyscale.toggle">
+                <source>Toggle Greyscale Mode</source>
+                <target>Graustufenmodus ein-/ausschalten</target>
+            </trans-unit>
+
+            <trans-unit id="highlightLinks.label">
+                <source>Highlight Links</source>
+                <target>Links hervorheben</target>
+            </trans-unit>
+            <trans-unit id="highlightLinks.toggle">
+                <source>Toggle Link Highlighting</source>
+                <target>Link-Hervorhebung ein-/ausschalten</target>
+            </trans-unit>
+
+            <trans-unit id="reset.label">
+                <source>Reset All</source>
+                <target>Alles zurücksetzen</target>
+            </trans-unit>
+            <trans-unit id="reset.button">
+                <source>Reset All Settings</source>
+                <target>Alle Einstellungen zurücksetzen</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
